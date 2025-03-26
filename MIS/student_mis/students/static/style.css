@@ -1,0 +1,80 @@
+/* Center the body content */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    color: #000;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Table container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the table horizontally */
+    text-align: center;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 20px;
+    border: 4px solid black; /* Initial border */
+    animation: glow 2s infinite; /* Add glowing animation to the border */
+}
+
+/* Table header */
+th {
+    background-color: #000; /* Black background for header */
+    color: #fff; /* White text for contrast */
+    padding: 10px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+}
+
+/* Table rows */
+td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #fff; /* White for odd rows */
+}
+
+/* CSS animation for glowing border */
+@keyframes glow {
+    0% {
+        border-color: black;
+        box-shadow: 0 0 5px black;
+    }
+    50% {
+        border-color: #ff5722; /* Glowing orange color */
+        box-shadow: 0 0 15px #ff5722;
+    }
+    100% {
+        border-color: black;
+        box-shadow: 0 0 5px black;
+    }
+}
+
+/* Keep the table near the top */
+table {
+    margin-top: 0;
+}
